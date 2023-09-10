@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funkoshop - Carrito de Compras</title>
+    <title>Carrito | Funkoshop</title>
 </head>
 
 <body>
@@ -26,8 +26,11 @@
                     <a href="../admin/login.html">LOGIN</a>
                 </li>
                 <li>
-                    <a href="./carrito.html">CARRITO</a>
-                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+                    <picture>
+                        <a href="./carrito.html">
+                            <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+                        </a>
+                    </picture> 
                 </li>
             </ul>
         </nav>
@@ -48,10 +51,15 @@
             </li>
         </div>
         <!----------------------- LISTA DE PRODUCTOS ----------------------->
-        <div>
-            <div>
+        <section>
+            <article>
                 <li>
-                    <img src="../../img/products/star-wars/baby-yoda-1.webp" alt="imagen de producto">
+                    <article>
+                        <picture>
+                            <img src="../../img/products/star-wars/baby-yoda-1.webp" alt="imagen de producto">
+                        </picture>
+                    </article>
+                    
                     <p>BABY YODA BLUEBALL</p>
                     <p>STAR WARS</p>
                     <p>precio: $ 1799,99</p>
@@ -64,11 +72,15 @@
                 </li>
 
                 <button>X</button>
-            </div>
-
-            <div>
+            </article>
+                
+            <article>
                 <li>
-                    <img src="../../img/products/pokemon/pidgeotto-box.webp" alt="imagen de producto">
+                    <article>
+                        <picture>
+                            <img src="../../img/products/pokemon/pidgeotto-box.webp" alt="imagen de producto">
+                        </picture>
+                    </article>
                     <p>PIDGEOTTO</p>
                     <p>POKEMON</p>
                     <p>precio: $ 1799,99</p>
@@ -81,30 +93,34 @@
                 </li>
 
                 <button>X</button>
-            </div>
-        </div>
+            </article>
+        </section>
         
         <!----------------------- RESUMEN DE LA COMPRA ----------------------->
-        <div>
-            <li>CANTIDAD DE ELEMENTOS
+        <section>
+            <li>
+                <p>CANTIDAD DE ELEMENTOS</p>
                 <p>3</p>
             </li>
-            <li>SUBTOTAL
+            <li>
+                <p>SUBTOTAL</p>
                 <p>$ 5399,97</p>
             </li>
-            <li>ENVÍO
+            <li>
+                <p>ENVÍO</p>
                 <p>$ 0,00</p>
             </li>
-            <li>TOTAL
+            <li>
+                <p>TOTAL</p>
                 <p>$ 5399,97</p>
             </li>
-        </div>
-
+        </section>
+            
         <!----------------------- BOTONES ----------------------->
-        <div>
+        <section>
             <button>IR A PAGAR</button>
-        </div>
-
+        </section>
+        
     </main>
 
     <footer>
