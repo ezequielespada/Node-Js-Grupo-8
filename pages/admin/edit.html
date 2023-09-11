@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Item | Funkoshop</title>
+</head>
+<body>
+  <!-- Inicio del Header-->
+  <header>
+    <nav>
+      <picture>
+        <a href="../../index.html">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+        </a>
+      </picture>
+      <ul>
+        <li>
+          <a href="../../index.html">VER TIENDA</a>
+        </li>
+        <li>
+          <a href="../admin/admin.html">ADMIN</a>
+        </li>
+        <li>
+          <a href="../../index.html">SALIR</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fin del Header-->
+  <main class="edit-item-container">
+    <h1 class="edit-item-header">EDITAR ITEM</h1>
+    <form class="edit-item-body">
+      <div class="category-item">
+        <label for="category-select">Categoría</label>
+        <select name="Categoría" id="category-select">
+          <option value="figuras">Figuras</option>
+        </select>
+      </div>
+      <div class="license-item">
+        <label for="license-select">Licencia</label>
+        <select name="Licencia" id="license-select">
+          <option value="naruto-shippuden">Naruto Shipudden</option>
+        </select>
+      </div>
+      <div class="product-name">
+        <label for="product-name">Nombre del producto</label>
+        <input name="Nombre del producto" id="product-name" type="text">
+      </div>
+      <div class="product-description">
+        <textarea name="Descripción del producto" id="product-description" cols="30" rows="6"></textarea>
+      </div>
+      <div class="item-sku">
+        <label for="item-sku">SKU:</label>
+        <input name="SKU" id="item-sku" type="text">
+      </div>
+      <div class="item-price">
+        <label for="item-price">Precio:</label>
+        <input name="Precio" id="item-price" type="text">
+      </div>
+      <div class="item-stock">
+        <label for="item-stock">Stock:</label>
+        <input name="Stock" id="item-stock" type="text">
+      </div>
+
+      <div class="payment-options">
+        <div class="item-discount">
+          <label for="item-discount">Descuento:</label>
+          <input name="Descuento" id="item-discount" type="text">
+        </div>
+        <div class="item-payment">
+          <label for="item-payment">Cuotas:</label>
+          <select name="Cuotas" id="item-payment">
+            <option value="6 Cuotas sin interés"></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="add-product-images">
+        <label for="">Imágenes:</label>
+        <input type="file" accept=".jpg,.png,.jpeg">
+      </div>
+      <section class="product-images-container">
+        <article class="product-image">
+          <img src="" alt="">
+          <p></p>
+        </article>
+      </section>
+      <button type="submit">Modificar Producto</button>
+    </form>
+  </main>
+
+  <footer>
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="../shop/shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="../admin/register.html">REGISTRARSE</a>
+          </li>
+          <li>
+            <a href="../admin/login.html">LOGIN</a>
+          </li>
+          <li>
+            <a href="../shop/contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+        </picture>
+      </nav>
+    </section>
+    <p>All rights reserved 2023 - Funkoshop&copy;</p>
+  </footer>
+</body>
+</html>
