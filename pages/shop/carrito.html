@@ -5,97 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/shop/carrito.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar">
+            <picture class="navbar__logo">
                 <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">SHOP<iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="../admin/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <picture>
-                        <a href="./carrito.html">
+                        <a class="navbar__cart" href="./carrito.html">
                             <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
                         </a>
-                    </picture> 
+                    </picture>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>CARRITO DE COMPRAS</h1>
+    <main class="main-container">
+        <h1 class="cart__title container">CARRITO DE COMPRAS</h1>
 
-        <div>
-            <li>
+        <section class="cart__details">
+            <li class="details__text">
                 <p>DETALLE DE PRODUCTO</p>
             </li>
-            <li>
+            <li class="details__text">
                 <p>CANTIDAD</p>
             </li>
-            <li>
+            <li class="details__text">
                 <p>TOTAL</p>
             </li>
-        </div>
-        <!----------------------- LISTA DE PRODUCTOS ----------------------->
-        <section>
-            <article>
-                <li>
-                    <article>
-                        <picture>
-                            <img src="../../img/products/star-wars/baby-yoda-1.webp" alt="imagen de producto">
-                        </picture>
-                    </article>
-                    
-                    <p>BABY YODA BLUEBALL</p>
-                    <p>STAR WARS</p>
-                    <p>precio: $ 1799,99</p>
-                </li>
-                <li>
-                    <input type="number" value="2">
-                </li>
-                <li>
-                    <p>$3599,98</p>
-                </li>
-
-                <button>X</button>
-            </article>
-                
-            <article>
-                <li>
-                    <article>
-                        <picture>
-                            <img src="../../img/products/pokemon/pidgeotto-box.webp" alt="imagen de producto">
-                        </picture>
-                    </article>
-                    <p>PIDGEOTTO</p>
-                    <p>POKEMON</p>
-                    <p>precio: $ 1799,99</p>
-                </li>
-                <li>
-                    <input type="number" value="1">
-                </li>
-                <li>
-                    <p>$1799,99</p>
-                </li>
-
-                <button>X</button>
-            </article>
         </section>
-        
+        <!----------------------- LISTA DE PRODUCTOS ----------------------->
+        <section class="cart">
+            <article class="cart__item">
+                <div class="item">
+                    <img class="item__img" src="../../img/products/star-wars/baby-yoda-1.webp" alt="imagen de producto">
+                    <div class="item__details">
+                        <p class="details__title">BABY YODA BLUEBALL</p>
+                        <p class="details__subtitle">STAR WARS</p>
+                        <p class="details__price">precio: $ 1799,99</p>
+                    </div>
+                </div>
+                <div class="count">
+                    <button class="increment">+</button>
+                    <input type="number" value="2">
+                    <button class="decrement">-</button>
+                </div>
+                <div class="price">
+                    <p>$3599,98</p>
+                </div>
+                <button class="cart__delete">X</button>
+            </article>
+
+            <article class="cart__item">
+                <div class="item">
+                    <img class="item__img" src="../../img/products/pokemon/pidgeotto-box.webp" alt="imagen de producto">
+                    <div class="item__details">
+                        <p class="details__title">PIDGEOTTO</p>
+                        <p class="details__subtitle">POKEMON</p>
+                        <p class="details__price">precio: $ 1799,99</p>
+                    </div>
+                </div>
+                <div class="count">
+                    <button class="increment">+</button>
+                    <input type="number" value="1">
+                    <button class="decrement">-</button>
+                </div>
+                <div class="price">
+                    <p>$1799,99</p>
+                </div>
+                <button class="cart__delete">X</button>
+            </article>
+
+        </section>
+
         <!----------------------- RESUMEN DE LA COMPRA ----------------------->
         <section>
             <li>
@@ -115,31 +126,37 @@
                 <p>$ 5399,97</p>
             </li>
         </section>
-            
+
         <!----------------------- BOTONES ----------------------->
         <section>
             <button>IR A PAGAR</button>
         </section>
-        
+
     </main>
 
-    <footer>
-        <section>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="../admin/login.html">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
                 </li>
-                <li>
-                    <a href="./contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/contact.html">CONTACTO</a>
                 </li>
             </ul>
-            <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-        </section>
-        <p>All rights reserved 2023 - Funkoshop&copy;</p>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop&copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
