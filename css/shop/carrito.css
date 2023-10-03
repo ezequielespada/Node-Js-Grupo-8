@@ -162,12 +162,10 @@ header {
 
 /******************* CART *******************/
 .main-container {
-    margin-top: 128px;
-    margin-left: 110px;
+    margin: 128px 110px 128px 110px;
     display: flex;
     flex-direction: column;
     gap: 68px;
-    margin-right: 110px;
 }
 
 .cart__title {
@@ -176,8 +174,6 @@ header {
     font-size: var(--font-jumbo);
     display: inline-flex;
     padding-bottom: 0px;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     border-bottom: 5px solid var(--primary-solid);
 }
@@ -254,7 +250,6 @@ header {
 .count {
     width: 89.479px;
     height: 40px;
-    flex-shrink: 0;
     border: 0.5px solid #C9C9C9;
     background: #FFF;
     color: #000;
@@ -264,6 +259,7 @@ header {
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    margin-left: 45px;
 }
 
 .price {
@@ -273,11 +269,34 @@ header {
     font-weight: 400;
 }
 
-.cart__delete {
+.cart__delete:hover { /*MODIFICAR ESTO*/
+    background-color: #ff6600;
+    color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.add-subtract {
+    background-color: rgba(242, 78, 30, 1);
+    color: #FFF;
+    width: 18px;
+    height: 18px;
+    border-color: rgba(242, 78, 30, 1);
+    margin-top: 1px;
+}
+
+.button__add-subtract {
     background-color: transparent;
-    border: 2px solid #ff6600;
-    border-radius: 50%;
-    color: #ff6600;
+    color: rgba(242, 78, 30, 1);
     width: 28px;
     height: 28px;
     font-size: 15px;
@@ -285,20 +304,92 @@ header {
     transition: background-color 0.3s;
     font-weight: 700;
     font-family: var(--base-font);
-  }
-  
-  .cart__delete:hover {
-    background-color: #ff6600;
-    color: #fff;
-  }
+}
+
+.button__count {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
 
 /******************* SUMMARY *******************/
-
 .summary {
     text-align: right;
+    gap: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
 }
-  
+
+.summary__details {
+    border-radius: 10px;
+    background: #FAFAFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 572px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details__subtotal,
+.details__elements,
+.details__shipping,
+.details__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.details__text {
+    font-family: var(--base-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details__number {
+    color: #747474;
+    font-family: var(--base-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pay__button {
+    text-align: center;
+    width: 572px;
+    height: 68.656px;
+    background: #F33;
+    color: #FFF;
+    font-family: var(--base-font);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.total__text {
+    font-family: var(--base-font);
+    border-top: 2px solid var(--primary-solid);
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-right: 358px;
+}
+
+.total__number {
+    border-top: 2px solid var(--primary-solid);
+    padding-top: 8px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(116, 116, 116, 1);
+}
+
+.pay__button:hover {
+    background-color: #FFF;
+    color: #F33;
+    border-color: #F33;
+}
 
 /******************* FOOTER *******************/
 .footer {
