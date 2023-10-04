@@ -227,14 +227,14 @@ header {
     border: none;
     background-color: transparent;
 }
-
+/*
 .list__details {
     display: flex;
     flex-direction: row;
     margin-top: 34px;
     justify-content: space-between;
     margin-left: 28px;
-}
+}*/
 
 .details__text {
     color: var(--dark-solid);
@@ -242,19 +242,21 @@ header {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.96px;
+    text-align: left;
 }
 
 .items {
     margin-top: 23px;
 }
 
+/*
 .item {
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: space-between;
     margin-left: 34px;
-}
+}*/
 
 .item__detail {
     color: var(--dark-solid);
@@ -264,19 +266,54 @@ header {
     font-weight: 500;
     line-height: 60.845px;
     letter-spacing: 0.96px;
+    text-align: left;
 }
 
-.item__modify {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    gap: 42px;
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-.modify-img {
+th:nth-child(1) {
+    padding-right: 70px;
+    text-align: center;
+}
+
+th:nth-child(2) {
+    padding-right: 50px;
+}
+
+th:nth-child(3) {
+    padding-right: 250px;
+}
+
+th:nth-child(4) {
+    padding-right: 200px;
+}
+
+th:nth-child(5) {
+    
+}
+
+table {
+    /*width: 100%;*/
+    margin-top: 34px;
+}
+
+table.fixed td {
+    overflow: hidden;
+}
+
+.modify-edit,
+.modify-delete {
     width: 32px;
     height: 33px;
+}
+
+.modify-edit {
+    margin-right: 42px;
 }
 
 /******************* FOOTER *******************/
