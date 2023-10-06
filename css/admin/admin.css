@@ -1,0 +1,141 @@
+/******************* SEARCHER *******************/
+.main-container {
+    margin: 36px 209px 128px 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.searcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searcher__lens {
+    size: 42px;
+}
+
+.searcher__text {
+    color: #B9B9B9;
+    font-family: var(--alternative-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 529.765px;
+    height: 44.285px;
+    padding-left: 23px;
+    margin-left: 19px;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+}
+
+/******************* ITEMS *******************/
+.list__options {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__title {
+    color: var(--dark-solid);
+    text-align: right;
+    font-family: var(--alternative-font);
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.68px;
+}
+
+.add {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    align-items: center;
+}
+
+.add-text {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+}
+
+.add-button {
+    border: none;
+    background-color: transparent;
+}
+
+.details__text {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+    text-align: left;
+}
+
+.items {
+    margin-top: 23px;
+}
+
+.item__detail {
+    color: var(--dark-solid);
+    align-items: center;
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60.845px;
+    letter-spacing: 0.96px;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+th:nth-child(1) {
+    width: 5%;
+    text-align: center;
+    padding-right: 2%;
+}
+
+th:nth-child(2) {
+    width: 10%;
+}
+
+th:nth-child(3) {
+    width: 30%;
+}
+
+th:nth-child(4) {
+    width: 20%;
+}
+
+th:nth-child(5) {
+    width: 5%;
+}
+
+table {
+    margin-top: 34px;
+}
+
+table.fixed td {
+    overflow: hidden;
+}
+
+.modify-edit,
+.modify-delete {
+    width: 32px;
+    height: 33px;
+}
+
+.modify-edit {
+    margin-right: 42px;
+}
