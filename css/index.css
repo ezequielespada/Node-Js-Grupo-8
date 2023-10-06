@@ -67,7 +67,7 @@ footer{
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
-ul,ol {
+li,ul,ol {
     list-style-type: none;
 }
 p{
@@ -93,6 +93,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: var(--spacing-68);
+    padding-right: var(--spacing-68);
 }
 
 .navbar__logo{
