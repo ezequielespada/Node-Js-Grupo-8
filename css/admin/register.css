@@ -1,7 +1,4 @@
 /*************** REGISTRO**************************/
-.form__registro {
-    text-align: center;
-} 
 .registro__seccion {
     padding: var(--spacing-16) 0;
     width: 50%;
@@ -13,7 +10,7 @@
 }
 
 .text-complete {
-    margin-bottom: var(--spacing-12);
+   margin-bottom: var(--spacing-12);
 }
 
 .registro__articulo {
@@ -60,7 +57,7 @@
     justify-content: space-around;
     align-content: center;
     gap: var( --spacing-24);
-    margin-bottom: var(--spacing-12);
+    margin-bottom: var(--spacing-16);
 }
 
 .checkbox {
@@ -79,4 +76,8 @@
 
 .terms {
     color: var(--secondary-solid);
+}
+
+.options {
+    margin-bottom: 20px;
 }
