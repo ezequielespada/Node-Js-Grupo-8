@@ -31,7 +31,8 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
+    --font-xxsmall: 0.75em;
 
     /*Spacing*/
     --spacing-128: 12.8rem;
@@ -43,6 +44,8 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-5: 0.5rem;
+    --spacing-2: 0.2rem;
 
 }
 *,
@@ -350,4 +353,45 @@ header {
     100% {
         opacity: 1;
     }
+}
+
+/*************** REGISTRO**************************/
+.form__registro {
+    text-align: center;
+} 
+.registro__seccion {
+    padding: var(--spacing-16) 0;
+    width: 50%;
+}
+.registro__titulo {
+    font-size: var(--font-large);
+    padding: var(--spacing-16) 0;
+}
+.registro__articulo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: var(--spacing-8);
+    align-items: left;
+    text-align: left;
+}
+.registro__seccion__input{
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+}
+.registro__label{
+    font-size: var(--font-xsmall);
+}
+.registro__input {
+    border-bottom-color: red;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+} 
+.registro__boton {
+    font-size: var(--font-xsmall);  
+    background-color: var(--primary-solid);
+    border-style: none;
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
 }

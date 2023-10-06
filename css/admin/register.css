@@ -1,0 +1,83 @@
+/*************** REGISTRO**************************/
+.registro__seccion {
+    padding: var(--spacing-16) 0;
+    width: 50%;
+}
+.registro__titulo {
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    letter-spacing: 1.68px; 
+}
+
+.text-complete {
+   margin-bottom: var(--spacing-12);
+}
+
+.registro__articulo {
+    display: grid;
+    grid-template-columns: 50% 55%;
+    padding: var(--spacing-12);
+}
+
+.registro__seccion__input{
+    font-family: var(--base-font);
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+}
+
+.registro__label{
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+}
+
+.registro__input {
+    font-family: var(--base-font);
+    border-bottom-color: red;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #B9B9B9; 
+    padding-bottom: var(--spacing-2);
+} 
+
+.registro__boton {
+    font-size: var(--font-xsmall);  
+    font-family: var(--base-font);
+    background-color: var(--primary-solid);
+    border-style: none;
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+}
+
+.aceptarterminos {
+    margin-top: var(--spacing-20);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    gap: var( --spacing-24);
+    margin-bottom: var(--spacing-16);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: var(--spacing-8);
+}
+
+.terms,
+.acept {
+    font-size: var(--font-xsmall); 
+    margin-left: var(--spacing-5);
+    font-weight: 400; 
+    font-family: var(--base-font);
+}
+
+.terms {
+    color: var(--secondary-solid);
+}
+
+.options {
+    margin-bottom: 20px;
+}
