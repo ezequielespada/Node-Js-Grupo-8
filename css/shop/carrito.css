@@ -1,9 +1,9 @@
 /******************* CART *******************/
 .main-container {
-    margin: 128px 110px 128px 110px;
+    margin: var(--spacing-128) var(--spacing-80);
     display: flex;
     flex-direction: column;
-    gap: 68px;
+    gap: var(--spacing-42);
 }
 
 .cart__title {
@@ -12,29 +12,23 @@
     font-size: var(--font-jumbo);
     display: inline-flex;
     padding-bottom: 0px;
-    gap: 10px;
+    gap: var(--spacing-6);
     border-bottom: 5px solid var(--primary-solid);
 }
 
 .cart__details {
-    display: flex;
-    margin-top: 60.15px;
+    display: grid;
+    margin-top: var(--spacing-37);
     border-radius: 10px;
     background: var(--light-bg-solid);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
-    height: 51px;
-    font-family: Inter;
+    height: 5.5rem;
+    font-family: var(--base-font);
     font-weight: 700;
-    padding: 0px 220px 0px 126px;
-}
-
-.details__product {
-    margin-right: 430px;
-}
-
-.details__count {
-    margin-right: 350px;
+    grid-template-columns: 45% 30% auto;
+    align-content: center;
+    padding-left: var(--spacing-80);
 }
 
 /******************* COLLECTIONS *******************/
@@ -44,72 +38,86 @@
     border-radius: 25px;
     background: var(--light-bg-solid);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: 16px;
+    padding: var(--spacing-12);
     height: 195px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    align-content: center;
+    grid-template-columns: 47% 27% 24% auto;
 }
 
 .item {
     display: flex;
     align-items: center;
-    width: 410px;
 }
 
 .item__details {
-    margin-left: 18px;
+    margin-left: var(--spacing-12);
 }
 
 .item__img {
-    width: 119px;
-    height: 118px;
+    width: 118.762px;
+    height: 118px; 
 }
 
 .details__title {
     font-family: var(--base-font);
-    font-size: 24px;
+    font-size: var(--font-large);
     font-weight: 700;
 }
 
 .details__price {
-    font-family: var(--base-font);
-    font-size: 14px;
-    font-weight: 500;
     margin-top: 20px;
 }
 
-.details__subtitle {
+.details__subtitle,
+.details__price {
     font-family: var(--base-font);
-    font-size: 14px;
+    font-size: var(--font-xsmall);
     font-weight: 500;
 }
 
 .count {
-    width: 89.479px;
+    width: 90px;
     height: 40px;
     border: 0.5px solid #C9C9C9;
-    background: #FFF;
-    color: #000;
+    background: var(--light-font-solid);
+    color: var(--dark-solid);
     font-family: var(--base-font);
-    font-size: 20px;
-    font-style: normal;
+    font-size: var(--font-medium);
     font-weight: 700;
-    line-height: normal;
     text-align: center;
-    margin-left: 45px;
 }
 
 .price {
     color: var(--dark-bg-solid);
     font-family: var(--base-font);
-    font-size: 20px;
+    font-size: var(--font-medium);
     font-weight: 400;
 }
-
-.cart__delete:hover { /*MODIFICAR ESTO*/
+/*
+.cart__delete:hover { 
     background-color: #ff6600;
-    color: #fff;
+    color: var(--light-font-solid);
+}*/
+.cart__delete-hover {
+    display: none;
+}
+
+.cart__delete path {
+    animation: fade;
+}
+
+.cart__delete-hover {
+    display: none;
+}
+
+.cart__delete:hover .cart__delete-hover {
+    display: block;
+}
+
+.cart__delete:hover .cart__delete-front {
+    display: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -124,17 +132,19 @@ input[type=number] {
 }
 
 .add-subtract {
-    background-color: rgba(242, 78, 30, 1);
-    color: #FFF;
+    background-color: var(--orange-solid);
+    color: var(--light-font-solid);
     width: 18px;
     height: 18px;
-    border-color: rgba(242, 78, 30, 1);
+    border-color: var(--orange-solid);
     margin-top: 1px;
+    border-style: solid;
+    border-color: var(--orange-solid);
 }
 
 .button__add-subtract {
     background-color: transparent;
-    color: rgba(242, 78, 30, 1);
+    color: var(--orange-solid);
     width: 28px;
     height: 28px;
     font-size: 15px;
@@ -162,7 +172,7 @@ input[type=number] {
 
 .summary__details {
     border-radius: 10px;
-    background: #FAFAFF;
+    background: var(--light-bg-solid);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     width: 572px;
     display: flex;
@@ -198,11 +208,18 @@ input[type=number] {
     text-align: center;
     width: 572px;
     height: 68.656px;
-    background: #F33;
-    color: #FFF;
+    background: var(--primary-solid);
+    color: var(--light-font-solid);
     font-family: var(--base-font);
     font-size: 32px;
     font-weight: 700;
+    border-style: solid;
+    border-color: var(--primary-solid);
+}
+
+.pay__button:hover {
+    background-color: var(--light-font-solid);
+    color: var(--primary-solid);
 }
 
 .total__text {
@@ -223,8 +240,15 @@ input[type=number] {
     color: rgba(116, 116, 116, 1);
 }
 
-.pay__button:hover {
-    background-color: #FFF;
-    color: #F33;
-    border-color: #F33;
+.add-subtract:hover {
+    background-color: var(--light-font-solid);
+    color: var(--orange-solid);
 }
+
+/* este estilo lo podemos poner despues para que se accione cuando 
+hagamos click, y no cuando pasamos el mouse por encima (hover, como está ahora)
+
+.clicked {
+    background-color: #FFF;
+    color: rgba(242, 78, 30, 1);
+}*/

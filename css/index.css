@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 :root{
     /*Palette*/
+    --orange-solid: #F24E1E;
+
     --primary-solid: #FF3333;
     --primary-900: rgba(255, 51, 51, 0.9);
     --primary-500: rgba(255, 51, 51, 0.5);
@@ -37,16 +39,22 @@
     --img-small: 12em;
 
     /*Spacing*/
+    --spacing-137: 13.7rem;
     --spacing-128: 12.8rem;
+    --spacing-80: 8rem;
     --spacing-70: 7rem;
     --spacing-68: 6.8rem;
+    --spacing-42: 4.2rem;
+    --spacing-37: 3.7rem;
     --spacing-36: 3.6rem;
+    --spacing-31: 3.1rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
     --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-6: 0.6rem;
     --spacing-5: 0.5rem;
     --spacing-2: 0.2rem;
 
