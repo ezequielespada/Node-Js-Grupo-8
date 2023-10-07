@@ -22,7 +22,9 @@
 }
 
 .text__option,
-.product__description {
+.text__selection,
+.product__description,
+.product__description-selection {
     color: #B9B9B9;
     font-family: var(--base-font);
     font-size: var(--font-xsmall);
@@ -52,7 +54,7 @@
 
 .form__discounts {
     display: grid;
-    grid-template-columns: 40% 35%;
+    grid-template-columns: 30% 30%;
 }
 
 .form__prices {
@@ -60,7 +62,9 @@
 }
 
 .text__product-name,
-.count__number {
+.text__product-name-selection,
+.count__number,
+.count__number-selection {
     color: #B9B9B9;
     font-family: var(--base-font);
     font-size: var(--font-xsmall);
@@ -73,7 +77,8 @@
     width: 60%;
 }
 
-.count__number:nth-child(2) {
+.count__number:nth-child(2),
+.count__number-selection:nth-child(2) {
     width: 40%;
 }
 
@@ -101,12 +106,14 @@ input[type=number] {
     font-size: var(--font-xsmall);  
     font-family: var(--base-font);
     background-color: var(--primary-solid);
-    border-style: none;
     color: var(--light-font-solid);
     padding: var(--spacing-8) var(--spacing-16);
+    border-style: solid;
+    border-color: var(--primary-solid);
 }
 
-.product__description {
+.product__description,
+.product__description-selection {
     width: 51%;
     height: var(--spacing-128); 
     border-radius: 4px;
@@ -114,6 +121,34 @@ input[type=number] {
     text-align: top;
 }
 
-.text__product-name {
+.text__product-name,
+.text__product-name-selection {
     width: 15%;
+}
+
+.product-image {
+    width: var(--img-small);
+    height: var(--img-small);
+}
+
+.img__text {
+    border-top: 1px solid var(--primary-solid);
+    text-align: center;
+}
+
+.text__selection,
+.text__product-name-selection,
+.product__description-selection,
+.count__number-selection {
+    color: black;
+}
+
+.product__name {
+    display: flex;
+    align-items: center;
+}
+
+.create__button:hover {
+    background-color: #FFF;
+    color: #F33;
 }
