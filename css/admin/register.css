@@ -41,6 +41,18 @@
     padding-bottom: var(--spacing-2);
 } 
 
+.input__mensaje {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    border-color: var(--primary-900);
+    margin-top: var(--spacing-2);
+    margin-bottom: var(--spacing-2);
+    height: 200px;
+    width: 300px;
+    padding-top: var(--spacing-8);
+    padding-left: var(--spacing-8);
+}
+
 .registro__boton {
     font-size: var(--font-xsmall);  
     font-family: var(--base-font);
