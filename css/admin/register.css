@@ -33,7 +33,7 @@
 
 .registro__input {
     font-family: var(--base-font);
-    border-bottom-color: red;
+    border-bottom-color: var(--primary-900);
     border-top: 0;
     border-left: 0;
     border-right: 0;

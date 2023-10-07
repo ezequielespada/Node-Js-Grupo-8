@@ -1,0 +1,154 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-24) var(--spacing-70);
+    gap: var(--spacing-24);
+}
+
+.title__create {
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    letter-spacing: 1.68px;
+}
+
+.text__label {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 400;
+    letter-spacing: 0.96px;
+    padding-right: var(--spacing-8);
+}
+
+.text__option,
+.text__selection,
+.product__description,
+.product__description-selection {
+    color: #B9B9B9;
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    padding: var(--spacing-5) var(--spacing-70) var(--spacing-5) var(--spacing-8);
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+}
+
+.form,
+.form__prices {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.form__options {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+}
+
+.form__categories {
+    display: grid;
+    grid-template-columns: 35% 35%;
+}
+
+.form__discounts {
+    display: grid;
+    grid-template-columns: 30% 30%;
+}
+
+.form__prices {
+    width: 70%;
+}
+
+.text__product-name,
+.text__product-name-selection,
+.count__number,
+.count__number-selection {
+    color: #B9B9B9;
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary-900);
+    padding-bottom: var(--spacing-2);
+    width: 60%;
+}
+
+.count__number:nth-child(2),
+.count__number-selection:nth-child(2) {
+    width: 40%;
+}
+
+.discounts {
+    width: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.create__buttons {
+    display: flex;
+    gap: var(--spacing-24);
+}
+
+.create__button {
+    font-size: var(--font-xsmall);  
+    font-family: var(--base-font);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+    border-style: solid;
+    border-color: var(--primary-solid);
+}
+
+.product__description,
+.product__description-selection {
+    width: 51%;
+    height: var(--spacing-128); 
+    border-radius: 4px;
+    border: 1px solid var(--dark-bg-solid);
+    text-align: top;
+}
+
+.text__product-name,
+.text__product-name-selection {
+    width: 15%;
+}
+
+.product-image {
+    width: var(--img-small);
+    height: var(--img-small);
+}
+
+.img__text {
+    border-top: 1px solid var(--primary-solid);
+    text-align: center;
+}
+
+.text__selection,
+.text__product-name-selection,
+.product__description-selection,
+.count__number-selection {
+    color: black;
+}
+
+.product__name {
+    display: flex;
+    align-items: center;
+}
+
+.create__button:hover {
+    background-color: #FFF;
+    color: #F33;
+}
