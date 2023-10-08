@@ -1,0 +1,111 @@
+.all_products_wrapper{
+	max-width: 1220px;
+	margin: 85px auto 0;
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	gap: 0 2%;
+}
+
+.filter_options_wrapper{
+
+}
+.filter_title{
+	font-size: var(--font-large);
+	font-weight: 500;
+	margin-bottom: var(--spacing-8);
+}
+.search_input{
+    width: 100%;
+	font-size: var(--font-medium);
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: var(--spacing-8);
+    margin-bottom: var(--spacing-28);
+}
+.search_input::placeholder{
+	color: rgb(0 0 0 / 40%);
+	font-size: var(--font-xxsmall);
+	font-weight: 500;
+}
+.filter_sort_by{
+	width: 100%;
+	color: rgb(0 0 0 / 40%);
+	font-size: var(--font-medium);
+	font-weight: 500;
+	border: 2px solid #000;
+    border-radius: 6px;
+	padding: var(--spacing-8);
+    margin-bottom: var(--spacing-28);
+}
+.filter_price{
+	display: grid;
+	grid-template-columns: 1fr 24% 1fr 1fr 24%;
+	margin-bottom: var(--spacing-28);
+}
+.filter_price span{
+	font-size: var(--font-small);
+	font-weight: 500;
+	text-align: center;
+}
+.minmax_price{
+	font-size: var(--font-small);
+	font-weight: 500;
+	padding-right: 15px;
+}
+.minmax_price_input{
+	font-size: var(--font-medium);
+	font-weight: 500;
+	text-align: center;
+	border: 2px solid #000;
+    border-radius: 6px;
+}
+.filter_by li{
+	margin-bottom: var(--spacing-8);
+}
+.filter_by li label{
+	font-size: var(--font-medium);
+	font-weight: 500;
+}
+
+.products_row{
+	display: flex;
+	gap: 0 3.5%;
+	margin-bottom: var(--spacing-24);
+}
+.single_product_wrapper{
+	position: relative;
+}
+.product_image{
+	height: 350px;
+    object-fit: cover;
+}
+.single_product_data{
+	padding: var(--spacing-24) 0;
+}
+.product_subtitle{
+	font-size: var(--font-xsmall);
+	font-weight: 500;
+}
+.product_title{
+	font-size: var(--font-medium);
+	font-weight: 700;
+	padding: var(--spacing-12) 0;
+}
+.product_price{
+	font-size: var(--font-small);
+}
+.product_price_subtitle{
+	color: var(--secondary-solid);
+	font-size: var(--font-xxsmall);
+	font-weight: 700;
+	padding-top: var(--spacing-12);
+}
+.new_product{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: var(--primary-solid);
+	color: var(--light-font-solid);
+	font-size: var(--font-xsmall);
+	padding: var(--spacing-6) var(--spacing-16);
+}
