@@ -2,6 +2,14 @@
 
 ## Este es nuestro proyecto final para el curso de FS Node-Js
 
+### Integrantes
+| Nombre | GitHub |
+|:---------:|:---------:|
+| Ezequiel | @ezequielespada |
+| Isabel | @LauriaIsa |
+| Camila | @airik99 |
+| Alexander | @AleCanavire |
+
 #### Nuestro trayecto ha incluido el aprendizaje de varios lenguajes entre ellos:
 
 * HTML
