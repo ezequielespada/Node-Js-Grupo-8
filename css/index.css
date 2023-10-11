@@ -331,7 +331,8 @@ iconify-icon {
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     right: 0;
-    border: transparent;
+    border-color: var(--primary-solid);
+    border-style: solid;
 }
 
 .card-item__cover img {

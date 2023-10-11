@@ -270,6 +270,11 @@ hagamos click, y no cuando pasamos el mouse por encima (hover, como está ahora)
     position: relative;
 }
 
+.button-add-cart:hover {
+    background-color: var(--light-font-solid);
+    color: var(--orange-solid);
+}
+
 .card-item__promo p {
     font-size: var(--font-xxxsmall);
     display: inline;
