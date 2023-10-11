@@ -5,10 +5,10 @@
 ### Integrantes
 | Nombre | GitHub |
 |:---------:|:---------:|
-| Ezequiel | @ezequielespada |
-| Isabel | @LauriaIsa |
-| Camila | @airik99 |
-| Alexander | @AleCanavire |
+| Ezequiel | [ezequielespada](https://github.com/ezequielespada) |
+| Isabel | [LauriaIsa](https://github.com/LauriaIsa) |
+| Camila | [airik99](https://github.com/airik99) |
+| Alexander | [AleCanavire](https://github.com/AleCanavire) |
 
 #### Nuestro trayecto ha incluido el aprendizaje de varios lenguajes entre ellos:
 
