@@ -13,19 +13,8 @@ subtract.addEventListener("click", function () {
     }
 });
 
-/*
-const quantityInput = document.getElementById("quantity");
-
-function add() {
-    let value = parseInt(quantityInput.value);
-    value++;
-    quantityInput.value = value;
-}
-
-function subtract() {
-    let value = parseInt(quantityInput.value);
-    if (value > 0) {
-        value--;
-        quantityInput.value = value;
+quantity.addEventListener("change", function () {
+    if (!(quantity.value > 0)) {
+        quantity.value = 0;
     }
-}*/
+});
