@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Item | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/admin/create.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h2 class="title__create">CREAR NUEVO ITEM</h2>
+        <form class="form">
+            <div class="form__categories">
+                <article class="">
+                    <label class="text__label">Categoría:</label>
+                    <select class="text__option">
+                        <option value="1">Seleccionar</option>
+                        <option value="2">STAR WARS</option>
+                        <option value="3">POKEMON</option>
+                        <option value="4">HARRY POTTER</option>
+                    </select>
+                </article>
+                <article>
+                    <label class="text__label">Licencia:</label>
+                    <select class="text__option">
+                        <option value="1">Seleccionar</option>
+                        <option value="2">FUNKO POP 1</option>
+                        <option value="3">FUNKO POP 2</option>
+                        <option value="4">FUNKO POP 3</option>
+                    </select>
+                </article>
+            </div>
+
+            <article>
+                <label class="text__label">Nombre del producto:</label>
+                <input class="text__product-name" type="text" placeholder="Kakashi Hatake Shippuden Saga">
+            </article>
+            <article>
+                <input class="product__description" type="text" placeholder="Descripción del producto">
+            </article>
+            <section class="form__prices">
+                <div class="form__options">
+                    <article>
+                        <label class="text__label">SKU:</label>
+                        <input class="count__number" type="text" placeholder="SSK111AB001">
+                    </article>
+                    <article>
+                        <label class="text__label">Precio:</label>
+                        <input class="count__number" type="number" placeholder="$ 0.000,00">
+                    </article>
+                    <article>
+                        <label class="text__label">Stock:</label>
+                        <input class="count__number" type="number" placeholder="0">
+                    </article>
+                </div>
+
+                <div class="form__discounts">
+                    <article class="discounts">
+                        <label class="text__label">Descuento:</label>
+                        <input class="count__number" type="number" placeholder="0%">
+                    </article>
+                    <article>
+                        <label class="text__label">Cuotas:</label>
+                        <select class="text__option">
+                            <option value="1">3 Cuotas sin interés</option>
+                            <option value="2">6 Cuotas sin interés</option>
+                            <option value="3">12 Cuotas sin interés</option>
+                        </select>
+                    </article>
+                </div>
+            </section>
+
+            <article>
+                <label class="text__label">Imágenes:</label>
+                <input type="file" placeholder="Elegir Archivos">
+            </article>
+        </form>
+        <section class="create__buttons">
+            <button class="create__button">Agregar Producto</button>
+            <button class="create__button">Limpiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop&copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>

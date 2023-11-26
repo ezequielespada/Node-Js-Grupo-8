@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Item | Funkoshop</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin/create.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./admin.html">ADMIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./login.html">SALIR</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="title__create">EDITAR ITEM</h1>
+    <form class="form">
+      <div class="form__categories">
+        <article>
+          <label class="text__label">Categoría</label>
+          <select class="text__selection">
+            <option>Figuras</option>
+          </select>
+        </article>
+        <article>
+          <label class="text__label">Licencia</label>
+          <select class="text__selection">
+            <option>Naruto Shipudden</option>
+          </select>
+        </article>
+      </div>
+
+      <article class="product__name">
+        <label class="text__label">Nombre del producto:</label>
+        <p class="text__product-name-selection" contenteditable="true">Kakashi Hatake Shippuden Saga</p>
+      </article>
+
+      <article>
+        <p class="product__description-selection">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</p>
+      </article>
+
+      <section class="form__prices">
+        <div class="form__options">
+
+          <article class="product__name">
+            <label class="text__label">SKU:</label>
+            <p class="count__number-selection" contenteditable="true">NAR001012</p>
+          </article>
+          <article class="product__name">
+            <label class="text__label">Precio:</label>
+            <p class="count__number-selection" contenteditable="true">$ 1.799,00</p>
+          </article>
+          <article class="product__name">
+            <label class="text__label">Stock:</label>
+            <p class="count__number-selection" contenteditable="true">10</p>
+          </article>
+        </div>
+
+        <div class="form__discounts">
+          <article class="product__name">
+            <label class="text__label">Descuento:</label>
+            <p class="count__number-selection" contenteditable="true">10%</p>
+          </article>
+          <article>
+            <label class="text__label">Cuotas:</label>
+            <select class="text__selection">
+              <option value="1">6 Cuotas sin interés</option>
+              <option value="2">12 Cuotas sin interés</option>
+              <option value="3">3 Cuotas sin interés</option>
+          </select>
+          </article>
+        </div>
+      </section>
+
+      <article>
+        <label class="text__label">Imágenes:</label>
+        <input type="file" placeholder="Elegir Archivos">
+      </article>
+    
+      <section class="create__buttons">
+        <article>
+          <img class="product-image" src="../../img/products/anime/kakashi_hatake_front.png">
+          <p class="img__text">Frente</p>
+        </article>
+        <article>
+          <img class="product-image" src="../../img/products/anime/kakashi_hatake_back.png">
+          <p class="img__text">Dorso</p>
+        </article>
+      </section>
+
+    </form>
+    <section class="create__buttons">
+      <button class="create__button">Modificar Producto</button>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./login.html">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/contact.html">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+      </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop&copy;</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
