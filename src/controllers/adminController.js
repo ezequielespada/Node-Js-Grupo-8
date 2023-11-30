@@ -1,5 +1,10 @@
+const productsData = require('../model/products.json');
+
 const adminControllers = {
-    admin: (req, res)  => res.send('Vista admin'),
+    admin: (req, res)  => res.render('admin', {
+        products: productsData
+        }
+    ),
     createget: (req, res)  => res.send('Vista admin create'),
     createpost: (req, res)  => res.send('Vista admin create post'),
     editidget: (req, res)  => res.send(`Vista admin edit con id, siendo el id: ${req.params.id}`),
