@@ -23,9 +23,9 @@
 
         <section class="list">
             <section class="list__options">
-                <h2 class="list__title">LISTADO DE PRODUCTOS</h2>
+                <h2 class="list__title"><%= title %></h2>
                 <div class="add">
-                    <p class="add-text">AGREGAR</p>
+                    <p class="add-text"><%= add_item %></p>
                     <button class="add-button">
                         <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -37,10 +37,10 @@
             </section>
             <table>
                 <tr class="list__details">
-                    <th class="details__text">ID</th>
-                    <th class="details__text">Código</th>
-                    <th class="details__text">Nombre del Producto</th>
-                    <th class="details__text">Categoria</th>
+                    <th class="details__text"><%= id_title %></th>
+                    <th class="details__text"><%= codigo_title %></th>
+                    <th class="details__text"><%= nombre_title %></th>
+                    <th class="details__text"><%= categoria_title %></th>
                     <th class="details__text"> </th>
                 </tr>
 
@@ -51,8 +51,8 @@
                     <th class="item__detail"><%= product.product_name %></th>
                     <th class="item__detail"><%= product.licence_name %></th>
                     <th class="item__modify">
-                        <img class="modify-edit" src="../../img/icons/edit_pencil.svg" alt="Icono Editar" href="/admin/edit/<%= product.id %>">
-                        <img class="modify-delete" src="../../img/icons/delete_trash.svg" alt="Icono Eliminar" href="/admin/delete/<%= product.id %>">
+                        <a href="/admin/edit/<%= product.product_id %>"><img class="modify-edit" src="../../img/icons/edit_pencil.svg" alt="Icono Editar"></a>
+                        <a href="/admin/delete/<%= product.product_id %>"><img class="modify-delete" src="../../img/icons/delete_trash.svg" alt="Icono Eliminar"></a>
                     </th>
                 </tr>
                 <% }) %>

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editar Item | Funkoshop</title>
-  <link rel="stylesheet" href="../../css/index.css">
-  <link rel="stylesheet" href="../../css/admin/create.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/admin/create.css">
 
 </head>
 
@@ -19,24 +19,24 @@
         <article>
           <label class="text__label">Categoría</label>
           <select class="text__selection">
-            <option>Figuras</option>
+            <option><%= product.category_name %></option>
           </select>
         </article>
         <article>
           <label class="text__label">Licencia</label>
           <select class="text__selection">
-            <option>Naruto Shipudden</option>
+            <option><%= product.licence_name %></option>
           </select>
         </article>
       </div>
 
       <article class="product__name">
         <label class="text__label">Nombre del producto:</label>
-        <p class="text__product-name-selection" contenteditable="true">Kakashi Hatake Shippuden Saga</p>
+        <p class="text__product-name-selection" contenteditable="true"><%= product.product_name %></p>
       </article>
 
       <article>
-        <p class="product__description-selection">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</p>
+        <p class="product__description-selection"><%= product.product_description %></p>
       </article>
 
       <section class="form__prices">
@@ -44,15 +44,15 @@
 
           <article class="product__name">
             <label class="text__label">SKU:</label>
-            <p class="count__number-selection" contenteditable="true">NAR001012</p>
+            <p class="count__number-selection" contenteditable="true"><%= product.product_sku %></p>
           </article>
           <article class="product__name">
             <label class="text__label">Precio:</label>
-            <p class="count__number-selection" contenteditable="true">$ 1.799,00</p>
+            <p class="count__number-selection" contenteditable="true"><%= product.product_price %></p>
           </article>
           <article class="product__name">
             <label class="text__label">Stock:</label>
-            <p class="count__number-selection" contenteditable="true">10</p>
+            <p class="count__number-selection" contenteditable="true"><%= product.dues %></p>
           </article>
         </div>
 
@@ -79,11 +79,11 @@
     
       <section class="create__buttons">
         <article>
-          <img class="product-image" src="../../img/products/anime/kakashi_hatake_front.png">
+          <img class="product-image" src="<%= product.img_front %>">
           <p class="img__text">Frente</p>
         </article>
         <article>
-          <img class="product-image" src="../../img/products/anime/kakashi_hatake_back.png">
+          <img class="product-image" src="<%= product.img_back %>">
           <p class="img__text">Dorso</p>
         </article>
       </section>
