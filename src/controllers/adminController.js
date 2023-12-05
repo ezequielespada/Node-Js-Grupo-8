@@ -1,7 +1,5 @@
-const { json } = require('express');
-const productsData = require('../model/products.json');
-//import { unlink } from 'node:fs';
-//import { validationResult } from 'express-validator';
+import { unlink } from 'node:fs';
+import { validationResult } from 'express-validator';
 import {
     getAllProductsFromDB,
     addProductFromDB,
@@ -21,8 +19,8 @@ const adminControllers = {
                 codigo_title: 'Código',
                 nombre_title: 'Nombre del Producto',
                 categoria_title: 'Categoría',
-                usuario: req.session.usuario,
-                data: datos,
+                //usuario: req.session.usuario,
+                products: datos,
                 mensaje: req.query.mensaje || ""
             });
         } catch (error) {
@@ -75,8 +73,8 @@ const adminControllers = {
             const product = await getProductByIDFromDB(productID);
             if (product) {
                 // res.status(200).json(usuario);
-                res.render('edit/:id', {
-                    data: product
+                res.render('edit', {
+                    product: product
                 })
             } else {
                 res.status(404).send('Product not found');
@@ -92,20 +90,34 @@ const adminControllers = {
         const updatedProductData = req.body;
         updatedProductData.imagen = req.file.filename;
 
+        // Validación
+        check('product_price')
+            .isNumeric().withMessage('El precio debe ser un número')
+            .custom(value => isPositiveNumber(value))
+            .withMessage('El precio debe ser un número positivo y no debe contener letras');
+
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            // Si hay errores, renderiza la vista con los errores
+            return res.render('edit', {
+                product: updatedProductData,
+                errors: errors.array(),
+            });
+        }
+
         try {
-            // Poner chequeo validacion
             const updatedProduct = await editProductPostFromDB(productID, updatedProductData);
             if (updatedProduct) {
-                // res.status(200).json(updatedUsuario);
-                res.redirect("/admin" + "?mensaje=Producto actualizado")
+                res.redirect("/admin" + "?mensaje=Producto actualizado");
             } else {
                 res.status(404).send('Producto not found');
             }
         } catch (error) {
             console.error('Error editing producto:', error);
-            res.status(500).send('Internal Server Error')
+            res.status(500).send('Internal Server Error');
         }
     },
+
 
     deleteid: async (req, res) => {
         const productID = req.params.id;
@@ -129,4 +141,4 @@ const adminControllers = {
     }
 };
 
-module.exports = adminControllers;
+export default adminControllers;

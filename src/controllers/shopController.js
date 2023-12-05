@@ -6,4 +6,4 @@ const shopControllers = {
     cartpost: (req, res)  => res.send('Vista del carrito')
 }
 
-module.exports = shopControllers;
+export default shopControllers;

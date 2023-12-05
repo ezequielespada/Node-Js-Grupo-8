@@ -6,4 +6,4 @@ const authControllers = {
     logout: (req, res)  => res.render('logout')
 }
 
-module.exports = authControllers;
+export default authControllers;

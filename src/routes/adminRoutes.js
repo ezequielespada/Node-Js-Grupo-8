@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const adminControllers = require('../controllers/adminController.js');
+import { Router } from 'express'
+const router = Router()
+import adminControllers from '../controllers/adminController.js';
 
 router.get('/', adminControllers.admin);
 router.get('/create', adminControllers.createget);
@@ -9,4 +9,4 @@ router.get('/edit/:id', adminControllers.editidget);
 router.put('/edit/:id', adminControllers.editidput);
 router.delete('/delete/:id', adminControllers.deleteid);
 
-module.exports = router;
+export default router;

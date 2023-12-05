@@ -1,7 +1,7 @@
-const path = require('path');
-const product = require('../model/products.json');
-const latestReleasesData = require('../model/latestReleases.json');
-const principalProductsData = require('../model/principalProducts.json');
+import path from 'path';
+import product from '../model/products.json' assert { type: 'json' };;
+import latestReleasesData from'../model/latestReleases.json' assert { type: 'json' };;
+import principalProductsData from '../model/principalProducts.json' assert { type: 'json' };;
 
 const mainControllers = {
     home: (req, res) => {
@@ -28,4 +28,4 @@ const mainControllers = {
     }
 };
 
-module.exports = mainControllers;
+export default mainControllers;

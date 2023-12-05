@@ -1,25 +1,22 @@
-const express = require('express');
+import express from 'express';
+import path from 'path';
+import mainRoutes from './src/routes/mainRoutes.js';
+import shopRoutes from './src/routes/shopRoutes.js';
+import adminRoutes from './src/routes/adminRoutes.js';
+import authRoutes from './src/routes/authRoutes.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 const app = express();
-const mainRoutes = require('./src/routes/mainRoutes.js');
-const shopRoutes = require('./src/routes/shopRoutes.js');
-const adminRoutes = require('./src/routes/adminRoutes.js');
-const authRoutes = require('./src/routes/authRoutes.js');
-const path = require('path');
-require('dotenv').config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4000;
 
 app.use(express.static('public'));
-//app.use(express.static(path.join(__dirname, 'public')));
-
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
 
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
 app.use('/auth', authRoutes);
 
-/*Motor de plantillas ejs*/
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './src/views'));
-
-app.listen(PORT, () => console.log('Servidor corriendo en el puerto 4000'));
-
+app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));
